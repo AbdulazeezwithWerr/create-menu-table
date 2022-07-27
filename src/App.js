@@ -11,14 +11,14 @@ const App = () => {
     fullName: "",
     address: "",
     phoneNumber: "",
-    email: "",
+    email: ""
   });
 
   const [editFormData, setEditFormData] = useState({
     fullName: "",
     address: "",
     phoneNumber: "",
-    email: "",
+    email: ""
   });
 
   const [editContactId, setEditContactId] = useState(null);
@@ -55,7 +55,7 @@ const App = () => {
       fullName: addFormData.fullName,
       address: addFormData.address,
       phoneNumber: addFormData.phoneNumber,
-      email: addFormData.email,
+      email: addFormData.email
     };
 
     const newContacts = [...contacts, newContact];
@@ -70,7 +70,7 @@ const App = () => {
       fullName: editFormData.fullName,
       address: editFormData.address,
       phoneNumber: editFormData.phoneNumber,
-      email: editFormData.email,
+      email: editFormData.email
     };
 
     const newContacts = [...contacts];
@@ -91,7 +91,7 @@ const App = () => {
       fullName: contact.fullName,
       address: contact.address,
       phoneNumber: contact.phoneNumber,
-      email: contact.email,
+      email: contact.email
     };
 
     setEditFormData(formValues);
@@ -117,11 +117,11 @@ const App = () => {
         <table>
           <thead>
             <tr>
-              <th>Name</th>
-              <th>Surname</th>
-              
+              <th>Имя</th>
+              <th>Фамилия</th>
+
               <th>Email</th>
-              
+
               <th>Actions</th>
             </tr>
           </thead>
@@ -147,7 +147,7 @@ const App = () => {
         </table>
       </form>
 
-      <h2>Add a Contact</h2>
+      <h2>Добавить контакты</h2>
       <form onSubmit={handleAddFormSubmit}>
         <input
           type="text"
@@ -156,7 +156,6 @@ const App = () => {
           placeholder="Enter a name..."
           onChange={handleAddFormChange}
         />
-        
 
         <input
           type="text"

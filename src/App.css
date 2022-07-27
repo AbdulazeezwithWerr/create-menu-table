@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@200&family=Poppins:wght@200&display=swap");
+* {
+  font-family: "Merriweather", serif;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
 .app-container {
   width: 100vw;
   height: 100vh;
@@ -21,11 +27,11 @@ td {
 }
 
 th {
-  background-color: rgb(117, 201, 250);
+  background-color: rgb(21, 146, 119);
 }
 
 td {
-  background-color: rgb(205, 235, 253);
+  background-color: rgb(37, 248, 231);
 }
 
 form {
@@ -40,4 +46,12 @@ form td:last-child {
 
 form * {
   font-size: 20px;
+}
+button {
+  border: 1px solid black;
+  width: 15vw;
+  height: 7vh;
+  text-align: center;
+  margin-top: 4vh;
+  background-color: none;
 }
